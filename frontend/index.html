@@ -6,29 +6,50 @@
 </head>
 <body>
 
-<h1>PulseCover 🚀</h1>
+<h1>🚀 PulseCover</h1>
+<p class="subtitle">AI-Powered Income Protection for Gig Workers</p>
 
-<div class="card">
-  <h2>Register</h2>
-  <input type="text" id="name" placeholder="Enter Name">
-  <input type="number" id="income" placeholder="Weekly Income">
-  <button onclick="calculatePremium()">Get Premium</button>
-</div>
+<div class="container">
 
-<div class="card">
-  <h2>Premium</h2>
-  <p id="premium"></p>
-</div>
+  <!-- Registration -->
+  <div class="card">
+    <h2>👤 Worker Details</h2>
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="number" id="income" placeholder="Weekly Income (₹)">
+    <button onclick="calculatePremium()">Calculate Premium</button>
+  </div>
 
-<div class="card">
-  <h2>Trigger Simulation</h2>
-  <button onclick="simulateRain()">Heavy Rain</button>
-  <button onclick="simulateTraffic()">Traffic Jam</button>
-</div>
+  <!-- Premium Display -->
+  <div class="card highlight">
+    <h2>💰 Premium Details</h2>
+    <p id="premium">--</p>
+    <p id="risk">Risk Score: --</p>
+  </div>
 
-<div class="card">
-  <h2>Payout</h2>
-  <p id="payout"></p>
+  <!-- AI Explanation -->
+  <div class="card">
+    <h2>🧠 AI Risk Engine</h2>
+    <ul id="aiInfo">
+      <li>Weather Impact: --</li>
+      <li>Traffic Level: --</li>
+      <li>Zone Risk: --</li>
+    </ul>
+  </div>
+
+  <!-- Trigger Simulation -->
+  <div class="card">
+    <h2>⚡ Simulate Disruption</h2>
+    <button onclick="simulateRain()">🌧 Heavy Rain</button>
+    <button onclick="simulateTraffic()">🚦 Traffic Jam</button>
+    <button onclick="simulateOutage()">📱 Platform Down</button>
+  </div>
+
+  <!-- Payout -->
+  <div class="card payout">
+    <h2>💸 Payout Status</h2>
+    <p id="payout">No payout yet</p>
+  </div>
+
 </div>
 
 <script src="app.js"></script>

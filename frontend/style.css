@@ -1,20 +1,110 @@
+/* 🌍 BODY */
 body {
-  font-family: Arial;
-  background: #eef2f7;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  margin: 0;
   text-align: center;
+  color: #333;
 }
 
+/* 🏷️ HEADINGS */
+h1 {
+  color: white;
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* 📦 GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 🧱 CARD DESIGN */
 .card {
   background: white;
-  margin: 20px auto;
   padding: 20px;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: fadeIn 0.6s ease;
 }
 
+/* 🔥 CARD HOVER POP-UP */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  border: 2px solid #4facfe;
+}
+
+/* 🌟 SPECIAL CARDS */
+.highlight {
+  border-left: 6px solid #4facfe;
+}
+
+.payout {
+  border-left: 6px solid #28a745;
+}
+
+/* ✏️ INPUT FIELD */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+/* 💡 INPUT FOCUS EFFECT */
+input:focus {
+  outline: none;
+  border: 2px solid #4facfe;
+  box-shadow: 0 0 10px rgba(79,172,254,0.5);
+}
+
+/* 🔘 BUTTON STYLE */
 button {
+  padding: 10px 15px;
   margin: 5px;
-  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  color: white;
   cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+/* 🎯 BUTTON HOVER EFFECT */
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* 📋 LIST */
+ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* ✨ FADE-IN ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
