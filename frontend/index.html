@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PulseCover</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>PulseCover 🚀</h1>
+
+<div class="card">
+  <h2>Register</h2>
+  <input type="text" id="name" placeholder="Enter Name">
+  <input type="number" id="income" placeholder="Weekly Income">
+  <button onclick="calculatePremium()">Get Premium</button>
+</div>
+
+<div class="card">
+  <h2>Premium</h2>
+  <p id="premium"></p>
+</div>
+
+<div class="card">
+  <h2>Trigger Simulation</h2>
+  <button onclick="simulateRain()">Heavy Rain</button>
+  <button onclick="simulateTraffic()">Traffic Jam</button>
+</div>
+
+<div class="card">
+  <h2>Payout</h2>
+  <p id="payout"></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
